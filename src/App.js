@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import ChatBox from "./components/ChatBox";
+import SidebarLinks from "./components/SidebarLinks";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container flex mx-auto py-4">
+      <div className="pr-5 w-3/12">
+        <SidebarLinks />
+      </div>
+
+      <div className="border border w-8/12 rounded-lg p-4">
+        <ChatBox />
+      </div>
     </div>
   );
 }
