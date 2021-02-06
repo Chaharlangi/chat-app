@@ -4,7 +4,6 @@ import UserCard from './UserCard'
 function SidebarLinks() {
     return (
         <div>
-            hello
             <UserCard />
         </div>
     )
